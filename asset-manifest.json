@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/MimiGames/static/css/main.672650fb.css",
-    "main.js": "/MimiGames/static/js/main.a40ccf00.js",
+    "main.js": "/MimiGames/static/js/main.720aa82f.js",
     "static/js/453.c735ab24.chunk.js": "/MimiGames/static/js/453.c735ab24.chunk.js",
     "index.html": "/MimiGames/index.html",
     "main.672650fb.css.map": "/MimiGames/static/css/main.672650fb.css.map",
-    "main.a40ccf00.js.map": "/MimiGames/static/js/main.a40ccf00.js.map",
+    "main.720aa82f.js.map": "/MimiGames/static/js/main.720aa82f.js.map",
     "453.c735ab24.chunk.js.map": "/MimiGames/static/js/453.c735ab24.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.672650fb.css",
-    "static/js/main.a40ccf00.js"
+    "static/js/main.720aa82f.js"
   ]
 }
