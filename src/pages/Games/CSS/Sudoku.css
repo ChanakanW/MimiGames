@@ -1,0 +1,103 @@
+/* Container ของบอร์ด */
+.sudoku-container {
+  box-sizing: border-box;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  display: flex;
+  justify-content: center;
+}
+
+.sudoku-board-wrapper {
+  width: 100%;
+  max-width: 560px;
+}
+
+/* Header */
+.sudoku-header {
+  font-size: 36px;
+  color: #ff5722;
+  text-shadow: 1px 1px #000;
+  text-align: center;
+  margin: 0;
+}
+
+/* Time bar */
+.sudoku-time-bar {
+  width: 100%;
+  margin-top: 2px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Grid ช่องตัวเลข */
+.sudoku-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 1fr;
+  gap: 1.5vmin;
+  margin-top: 12px;
+}
+
+/* ช่องตัวเลขแต่ละตัว */
+.sudoku-tile {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  user-select: none;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+  font-weight: 800;
+  -webkit-transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+  -moz-transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+  -ms-transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+  -o-transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+}
+
+/* ช่องว่าง */
+.sudoku-tile.blank {
+  background: #e0e4eb;
+  color: #9aa4b2;
+  border: 1px dashed rgba(0,0,0,0.04);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.6);
+  cursor: default;
+}
+
+/* ช่องตัวเลข */
+.sudoku-tile.number {
+  background: linear-gradient(180deg,#18a1e0,#0a84c5);
+  color: #fff;
+  cursor: pointer;
+  border: 1px dashed rgba(0,0,0,0.04);
+}
+
+/* ปุ่มสุ่มใหม่ */
+.sudoku-new-btn {
+  padding: 16px 26px;
+  font-size: 18px;
+  background: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  font-weight: 600;
+  transition: 0.15s ease;
+  margin-top: 18px;
+  display: inline-block;
+}
+
+/* ปุ่ม effect on press */
+.sudoku-new-btn:active {
+  transform: scale(0.97);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+
+/* Note */
+.sudoku-note {
+  margin-top: 10px;
+  font-size: 16px;
+  text-align: center;
+}
